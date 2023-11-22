@@ -5,7 +5,7 @@ import java.rmi.RemoteException;
 
 public class Main {
     public static void main(String[] args) throws RemoteException, MalformedURLException, NotBoundException {
-        Number num = (Number) Naming.lookup("test");
+        Number num = (Number) Naming.lookup("rmi://localhost:1099/progressNum");
         num.add(10);
     }
 }
